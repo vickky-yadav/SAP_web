@@ -2,11 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import Demo from "./components/signup";
+import SignupPage from "./components/signupPage/signup";
 
 ReactDOM.render(
   <>
-    <Demo />
+    <SignupPage />
   </>,
   document.getElementById("root")
 );
