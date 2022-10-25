@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./styles.css";
 import axios from "axios";
+import facebook from "./../../images/facebook.png";
+import mail from "./../../images/mail.png";
+import github from "./../../images/github.png";
 
 const SignupPage = () => {
-  const EMPTY_STRING = ""
+  const EMPTY_STRING = "";
 
   const [apiData, setApiData] = useState([]);
   const [name, setName] = useState(EMPTY_STRING);
@@ -27,7 +30,7 @@ const SignupPage = () => {
         <div className="leftDiv">
           <div className="internalLeftDiv">
             <div className="mainTag">
-              <h1>SIGNUP!</h1>
+              <h1>Please Sign Up</h1>
             </div>
             <div className="inputFields">
               <input
@@ -74,7 +77,7 @@ const SignupPage = () => {
                 placeholder="Re-enter Password"
                 autoComplete="off"
                 value={reEnterPassword}
-                 onChange={(event) => setReEnterPassword(event.target.value)}
+                onChange={(event) => setReEnterPassword(event.target.value)}
               ></input>
             </div>
             <div className="inputFields">
@@ -83,10 +86,22 @@ const SignupPage = () => {
                   return <option>{data}</option>;
                 })}
               </select>
+              <div className="inputFields">
+                <button type="button" className="buttonData">Sign Up</button>
+              </div>
             </div>
           </div>
         </div>
-        <div className="rightDiv"></div>
+        <div className="rightDiv">
+          <div className="signUpTag">
+            <h1 className="mainTag2">SIGNUP WITH</h1>
+            <div className="imagesBox">
+              <img src={facebook} alt="" height="180px"></img>
+              <img src={mail} alt="" height="190px" className="mail"></img>
+              <img src={github} alt="" className="images"></img>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

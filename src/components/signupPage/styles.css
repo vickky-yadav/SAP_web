@@ -12,7 +12,7 @@
 .rightDiv {
   height: 100vh;
   width: 30vw;
-  background: rgb(104, 100, 100);
+  background: rgb(61, 59, 59);
   position: absolute;
   margin-left: 70%;
 }
@@ -29,15 +29,16 @@
 }
 
 .internalLeftDiv {
-  height: 60vh;
+  height: 70vh;
   width: 30vw;
-  margin-top: 20vh;
+  margin-top: 10vh;
   margin-left: 35vh;
-  background:rgb(228, 225, 225);
+  background: rgb(228, 225, 225);
   position: absolute;
   border-radius: 10px;
   border-color: white;
   border-style: solid;
+  border: 1px solid rgb(61, 59, 59);
 }
 
 .inputFields {
@@ -46,8 +47,8 @@
 
 .mainTag {
   margin-top: 15px;
-  margin-left: 22vh;
-  text-emphasis-color: white;
+  margin-left: 15vh;
+  color: rgb(48, 46, 46);
 }
 
 .data {
@@ -56,6 +57,42 @@
   border-radius: 8px;
   margin-top: 30px;
   margin-left: 75px;
-  border-color:  whitesmoke;
+  border-color: whitesmoke;
   padding-left: 10px;
+}
+
+.signUpTag {
+  margin-top: 60px;
+  margin-left: 16vh;
+  color: whitesmoke;
+}
+
+.images {
+  margin-left: 3.4vh;
+  margin-top: 3vh;
+  height: 140px;
+}
+
+.mainTag2 {
+  margin-top: 65px;
+  margin-left: 2vh;
+  color: whitesmoke;
+}
+
+.imagesBox {
+  margin-left: 3.5vh;
+}
+
+.buttonData {
+  width: 300px;
+  height: 40px;
+  border-radius: 8px;
+  margin-top: 30px;
+  margin-left: 75px;
+  border-color: whitesmoke;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  background-color: rgb(61, 59, 59);
+  border: 3px solid rgb(61, 59, 59);
 }
